@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+body {
+  @apply bg-primary text-white;
+}
+
+.dark-mode {
+  @apply bg-primary text-accent;
+}
+
+/* Custom Styles */
+body {
+  @apply bg-primary text-white transition-colors duration-300;
+}
+
+.dark-mode {
+  @apply bg-primary text-accent;
+}
+
+/* Navbar Styles */
+.navbar a:hover {
+  @apply bg-secondary;
+}
+
+/* Buttons */
+button:hover {
+  @apply bg-accent;
+}
