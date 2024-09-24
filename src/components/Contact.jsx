@@ -16,10 +16,8 @@ function Contact({ language }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can add functionality to handle the form submission
     console.log('Form Data Submitted:', formData);
     alert(language === 'en' ? 'Message sent successfully!' : 'Fariinta waa la diray si guul leh!');
-    // Reset the form fields
     setFormData({
       name: '',
       email: '',
@@ -28,42 +26,42 @@ function Contact({ language }) {
   };
 
   return (
-    <div className="p-8">
-      <h2 className="text-3xl font-bold mb-4">
+    <div className="max-w-2xl mx-auto p-8 bg-white shadow-lg rounded-lg">
+      <h2 className="text-4xl font-bold mb-8 text-center text-primary">
         {language === 'en' ? 'Contact Me' : 'La Xiriir Aniga'}
       </h2>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div>
-          <label className="block mb-1">{language === 'en' ? 'Name' : 'Magaca'}</label>
+      <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="flex flex-col">
+          <label className="text-lg mb-2">{language === 'en' ? 'Name' : 'Magaca'}</label>
           <input
             type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-3 py-2 rounded text-black"
+            className="px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-secondary"
             placeholder={language === 'en' ? 'Your Name' : 'Magacaaga'}
             required
           />
         </div>
-        <div>
-          <label className="block mb-1">{language === 'en' ? 'Email' : 'Email-ka'}</label>
+        <div className="flex flex-col">
+          <label className="text-lg mb-2">{language === 'en' ? 'Email' : 'Email-ka'}</label>
           <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-3 py-2 rounded text-black"
+            className="px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-secondary"
             placeholder={language === 'en' ? 'Your Email' : 'Email-kaaga'}
             required
           />
         </div>
-        <div>
-          <label className="block mb-1">{language === 'en' ? 'Message' : 'Fariin'}</label>
+        <div className="flex flex-col">
+          <label className="text-lg mb-2">{language === 'en' ? 'Message' : 'Fariin'}</label>
           <textarea
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full px-3 py-2 rounded text-black"
+            className="px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-secondary"
             rows="5"
             placeholder={language === 'en' ? 'Your Message' : 'Fariintaada'}
             required
@@ -71,7 +69,7 @@ function Contact({ language }) {
         </div>
         <button
           type="submit"
-          className="bg-secondary text-primary px-4 py-2 rounded hover:bg-accent"
+          className="w-full py-3 text-white bg-secondary rounded hover:bg-accent transition-colors duration-300"
         >
           {language === 'en' ? 'Send Message' : 'Dir Fariin'}
         </button>
