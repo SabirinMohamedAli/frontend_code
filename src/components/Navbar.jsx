@@ -52,7 +52,7 @@ function Navbar({ language, switchLanguage }) {
             <FaGithub size={24} /> {/* Adjusted icon size */}
           </a>
           <a
-            href="https://facebook.com/your-facebook"
+            href="https://www.facebook.com/profile.php?id=100077115147759"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-secondary"
