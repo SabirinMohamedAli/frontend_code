@@ -28,7 +28,7 @@ function Navbar({ language, switchLanguage }) {
         }`}
       >
         <Link to="/" className="hover:bg-secondary px-3 py-2 rounded">
-          {language === 'en' ? 'Home' : 'Guriga'}
+          {language === 'en' ? 'Home' : 'Home'}
         </Link>
         <Link to="/about" className="hover:bg-secondary px-3 py-2 rounded">
           {language === 'en' ? 'About' : 'Ku Saabsan'}
