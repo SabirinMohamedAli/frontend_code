@@ -9,7 +9,7 @@ import { TypeAnimation } from 'react-type-animation';
 const Home = ({ language }) => {
     return (
         <div className="container mx-auto px-4 py-8">
-            <section id="intro" className="flex flex-col lg:flex-row items-center justify-between py-16">
+            <section id="intro" className="flex flex-col lg:flex-row items-center justify-around py-16">
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                     <h1 className="text-4xl sm:text-5xl font-bold mb-4">
                         {language === 'en' ? 'Hi, I am' : 'Salaan, Anigu waxaan ahay'}
@@ -46,7 +46,7 @@ const Home = ({ language }) => {
                     <img
                         src={MyImage}
                         alt="Sabirin"
-                        className="w-full lg:w-3/4 rounded-lg shadow-lg"
+                        className="w-full h-full object-cover lg:w-3/4 rounded-lg shadow-lg"
                     />
                 </div>
             </section>

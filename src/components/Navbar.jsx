@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaFacebook, FaBars, FaTimes } from 'react-icons/fa';
-
+import '../App.css';
 function Navbar({ language, switchLanguage }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
