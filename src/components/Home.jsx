@@ -67,7 +67,6 @@ const Home = ({ language }) => {
                 <Contact language={language} />
             </section>
 
-            {/* Add Footer if necessary */}
         </div>
     );
 };
